@@ -10,7 +10,7 @@ jobs:
   test-workflow:
     runs-on: ubuntu-latest
 
-    if: ${{ github.repository_owner }} == 'test-ghactions'
+    if: ${{ github.repository_owner }} != 'test-ghactions'
 
     steps:
       - name: Test
