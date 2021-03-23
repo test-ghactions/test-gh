@@ -10,8 +10,8 @@ jobs:
   test-workflow:
     runs-on: ubuntu-latest
 
-  steps:
-    - name: Get Repo Owner
-      shell: bash
-      run: | 
-        echo ${{ github.repository_owner }}
+    steps:
+      - name: Test
+        shell: bash
+        run: | 
+          echo ${{ github.repository_owner }}
